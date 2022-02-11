@@ -36,7 +36,6 @@ I Guess This Will Be Usefull For Many People.....😇.
 <a href="https://youtu.be/LCrkRTMkmzE">
   <img src="https://img.shields.io/badge/How%20to-Deploy-red?logo=youtube" width="147">
 </a><br>
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/newkanekibot/files/tree/Py-Tgcalls(main)&envs=API_ID,API_HASH,TG_BOT_TOKEN,CHANNEL_ID,OWNER_ID,FORCE_SUB_CHANNEL,ADMINS)
 
 **Check This Tutorial Video on YouTube for any Help**<br>
 **Thanks to [Erich](https://t.me/ErichDaniken) and his [InFoTel](https://t.me/InFoTel_Group) for this Video**
