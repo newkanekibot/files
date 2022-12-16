@@ -1,13 +1,13 @@
 {
-  "name": "File Sharing Man",
+  "name": "File Sharing",
   "description": "BOT Multi Force Subs File Sharing Bot berguna untuk menyimpan file dan dapat diakses melalui link khusus",
-  "stack": "heroku-22",
   "keywords": [
     "telegram",
     "file",
     "sharing"
   ],
-  "logo": "https://telegra.ph/file/9dc4e335feaaf6a214818.jpg",
+  "repository": "https://github.com/newkanekibot/files2",
+  "logo": "https://telegra.ph/file/7810c1a22a0641cff2c41.jpg",
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Masukan Bot token, Dapatkan dari t.me/BotFather",
@@ -15,30 +15,34 @@
     },
     "OWNER": {
       "description": "Masukan Username Telegram untuk Owner BOT [ Jangan Pake @ ]",
-      "value": "mrismanaziz"
+      "value": "🔗"
+    },
+    "OWNER_ID": {
+      "description": "Masukan User ID Telegram untuk Owner BOT",
+      "value": "1999537338"
     },
     "ADMINS": {
-      "description": "Masukan User ID untuk mendapatkan hak Admin di BOT [ Gunakan Spasi Untuk Pemisah User ID ]",
+      "description": "Masukan User ID untuk mendapatkan hak Admin BOT [Hanya dapat membuat link]",
       "value": "0"
     },
     "APP_ID": {
       "description": "Dapatkan APP ID di web my.telegram.org",
-      "value": "6"
+      "value": ""
     },
     "API_HASH": {
       "description": "Dapatkan API HASH di web my.telegram.org",
-      "value": "eb06d4abfb49dc3eeb1aeb98ae0f581e"
+      "value": ""
     },
     "CHANNEL_ID": {
       "description": "Masukan ID Channel Untuk [Channel Database]",
       "value": "-100"
     },
-    "PROTECT_CONTENT": {
-      "description": "Untuk Mencegah pengguna bot untuk mendownload/memforward/mengscreenshot konten yang dikirim di bot [ Bila ingin diaktifkan ubah ke True ]",
-      "value": "False"
-    },
     "FORCE_SUB_CHANNEL": {
       "description": "Masukan ID dari Channel Atau Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
+      "value": "0"
+    },
+    "FORCE_SUB_GROUP": {
+      "description": "Masukan ID dari Group Untuk Wajib Subscribenya, Bila tidak ingin dipakai Fsubnya, isi dengan 0",
       "value": "0"
     },
     "START_MESSAGE": {
@@ -48,6 +52,16 @@
     "FORCE_SUB_MESSAGE": {
       "description": "Pesan Paksa Subscribe bot, Gunakan Format parsemode HTML",
       "value": "<b>Hello {first}\n\nAnda harus bergabung di Channel/Grup saya untuk menggunakan saya\n\nSilakan Join Ke Channel Terlebih Dahulu</b>"
+    },
+    "CHANNEL":{
+      "description": "Masukan Username Channel anda Untuk Wajib Subscribenya [ Jangan Pake @ ]",
+      "value": "sinner",
+      "required": false
+    },
+    "GROUP":{
+      "description": "Masukan Username dari Group anda Untuk Wajib Subscribenya [ Jangan Pake @ ]",
+      "value": "texasgroup",
+      "required": false
     }
   },
   "addons": [
@@ -66,7 +80,8 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "eco"
+      "size": "free"
     }
   }
 }
+
